@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entidade 3 | Meu Sistema</title>
+</head>
+<body>
+    <header>
+        <h1>Meu Sistema</h1>
+
+        <nav>
+            <a href="tecnicos.html">Entidade 1</a>
+            <a href="solicitantes.html">Entidade 2</a>
+            <a href="registros.html">Entidade 3</a>
+            <a href="vinculo.html">Vínculos</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Entidade 3</h2>
+        <h3>Novo Cadastro</h3>
+
+        <form action="">
+            <label for="campo1">Campo 1</label>
+            <input type="text" name="campo1" id="campo1" maxlength="100" required>
+            <label for="campo2">Campo 2 (número)</label>
+            <input type="number" name="campo2" id="campo2" min="0" step="1" required>
+            <button type="submit" disabled>Salvar</button>
+        </form>
+
+        <table>
+            <caption>Lista de entidade 3</caption>
+            <thead>
+                <tr>
+
+                    <th>Campo 1</th>
+                    <th>Campo 2</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="lista-registros"></tbody>
+        </table>
+    </main>
+    <script type="module" src="js/registros.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vínculos | Meu Sistema</title>
+</head>
+<body>
+    <header>
+        <h1>Meu Sistema</h1>
+
+        <nav>
+            <a href="tecnicos.html">Entidade 1</a>
+            <a href="solicitantes.html">Entidade 2</a>
+            <a href="registros.html">Entidade 3</a>
+            <a href="vinculo.html">Vínculos</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Vínculos</h2>
+
+        <form action="">
+            <label for="data_vinculo">Data</label>
+            <input id="data_vinculo" name="data_vinculo" type="date" required>
+
+            <label for="id_tecnicos">Entidade 1</label>
+            <select name="id_tecnicos" id="id_tecnicos" required>
+                <option value="">Selecione a entidade 1</option>
+            </select>
+
+            <label for="id_solicitantes">Entidade 2</label>
+            <select name="id_solicitantes" id="id_solicitantes" required>
+                <option value="">Selecione a entidade 2</option>
+            </select>
+
+            <label for="id_registros">Entidade 3</label>
+            <select name="id_registros" id="id_registros" required>
+                <option value="">Selecione a entidade 3</option>
+            </select>
+
+            <button type="submit" disabled>Vincular</button>
+        </form>
+
+        <table>
+            <caption>Lista de vínculos</caption>
+            <thead>
+                <tr>
+
+                    <th>Data</th>
+                    <th>Entidade 1</th>
+                    <th>Entidade 2</th>
+                    <th>Entidade 3</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="lista-vinculo"></tbody>
+        </table>
+    </main>
+    <script type="module" src="js/vinculo.js"></script>
+</body>
+</html>

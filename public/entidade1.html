@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entidade 1 | Meu Sistema</title>
+</head>
+<body>
+    <header>
+        <h1>Meu Sistema</h1>
+
+        <nav>
+            <a href="tecnicos.html">Entidade 1</a>
+            <a href="solicitantes.html">Entidade 2</a>
+            <a href="registros.html">Entidade 3</a>
+            <a href="vinculo.html">Vínculos</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Entidade 1</h2>
+        <h3>Novo Cadastro</h3>
+
+        <form action="">
+            <label for="campo1">Campo 1</label>
+            <input type="text" name="campo1" id="campo1" maxlength="100" required>
+
+            <label for="campo2">Campo 2</label>
+            <input type="text" name="campo2" id="campo2" required>
+
+            <label for="campo3">Campo 3</label>
+            <input type="text" name="campo3" id="campo3" required>
+
+            <button type="submit" disabled>Salvar</button>
+        </form>
+
+        <table>
+            <caption>Lista de entidade 1</caption>
+            <thead>
+                <tr>
+
+                    <th>Campo 1</th>
+                    <th>Campo 2</th>
+                    <th>Campo 3</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="lista-tecnicos"></tbody>
+        </table>
+    </main>
+    <script type="module" src="js/tecnicos.js"></script>
+</body>
+</html>
